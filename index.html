@@ -12,24 +12,24 @@
     <section class="form-container">
         <form action="" method="POST">
             <div>
-                <input type="text" class="form-input cardno" id="cardNo" placeholder=" " autocomplete="off">
+                <input type="text" class="form-input cardno" id="cardNo" placeholder=" " autocomplete="off" required>
                 <label for="cardNo" class="form-label">Card number</label>
             </div>
             <div>
-                <input type="text" class="form-input card-name" id="cardHolder" placeholder=" " autocomplete="off">
+                <input type="text" class="form-input card-name" id="cardHolder" placeholder=" " autocomplete="off" required>
                 <label for="cardHolder cardName" class="form-label">card holder</label>
             </div>
             <div class="expiry">
                 <div>
-                    <input type="number" class="form-input expiry-month" id="expiryMonth" placeholder=" " autocomplete="off" min="01" max="12">
+                    <input type="number" class="form-input expiry-month" id="expiryMonth" placeholder=" " autocomplete="off" min="01" max="12" required>
                     <label for="expiryMonth" class="form-label">MM</label>
                 </div>
                 <div>
-                    <input type="number" class="form-input expiry-year" id="expiryYear" placeholder=" " autocomplete="off">
+                    <input type="number" class="form-input expiry-year" id="expiryYear" placeholder=" " autocomplete="off" required>
                     <label for="expiryYear" class="form-label">YY</label>
                 </div>
                 <div class="cvv-container">
-                    <input type="number" class="form-input cvv" id="cvv" placeholder=" " autocomplete="off" min="000" max="999">
+                    <input type="number" class="form-input cvv" id="cvv" placeholder=" " autocomplete="off" min="000" max="999" required>
                     <label for="cvv" class="form-label cvvlabel">CVV</label>
                 </div>
             </div>

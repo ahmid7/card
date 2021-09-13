@@ -11,6 +11,7 @@ const expiryMonth = document.querySelector('.expiry-month');
 const expiryYear = document.querySelector('.expiry-year');
 const userExpiryMonth = document.querySelector('.user-expiry-month');
 const userExpiryYear = document.querySelector('.user-expiry-year');
+const submit = document.querySelector('.submit-container');
 
 function Values(input,output,num){
     if(input.value.length < num){
@@ -61,5 +62,4 @@ cvvInput.addEventListener('blur',function(){
     frontCard.style.visibility = 'hidden';
     frontCard.style.animation = 'reverseFront 0.4s linear 0.4s forwards'
 });
-
 

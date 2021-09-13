@@ -11,7 +11,6 @@ body {
   color: white;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bdc3c7), to(#2c3e50));
   background-image: linear-gradient(#bdc3c7, #2c3e50);
-  border: 2px solid black;
 }
 
 .form-container {
@@ -480,7 +479,7 @@ form div {
 @media screen and (max-width: 769px) {
   form {
     width: 85%;
-    padding-top: 20%;
+    padding-top: 15%;
   }
   .card {
     width: 85%;

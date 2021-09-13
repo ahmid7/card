@@ -8,7 +8,6 @@ body{
     position: relative;
     color: white;
     background-image: linear-gradient(#bdc3c7,#2c3e50);
-    border:2px solid black;
 }
 .form-container{
     display: flex;
@@ -304,7 +303,7 @@ form div{
 @media screen and (max-width:769px) {
     form{
         width: 85%;
-        padding-top: 20%;
+        padding-top:15%
     }
     .card{
         width: 85%;
