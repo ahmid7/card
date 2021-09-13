@@ -11,6 +11,7 @@ body {
   color: white;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bdc3c7), to(#2c3e50));
   background-image: linear-gradient(#bdc3c7, #2c3e50);
+  min-height: 100vh;
 }
 
 .form-container {
