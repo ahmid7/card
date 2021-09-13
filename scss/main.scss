@@ -41,12 +41,12 @@ form div{
     top:0.8rem;
     left: 0.9rem;
     cursor: text;
-    transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
-    -webkit-transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
-    -moz-transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
-    -ms-transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
-    -o-transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
-    background-color: #060b23;
+    transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in,color 200ms ease-in;
+    -webkit-transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in,color 200ms ease-in;
+    -moz-transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in,color 200ms ease-in;
+    -ms-transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in,color 200ms ease-in;
+    -o-transition:top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in,color 200ms ease-in;
+    background:none;
 }
 .form-input{
     display: block;
@@ -57,7 +57,7 @@ form div{
     color: white;
     width: 100%;
     border:3px solid #e1e5ee;
-    margin-bottom: 1.3rem;
+    margin-bottom: 2rem;
     padding: 10px 10px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -79,8 +79,28 @@ form div{
     flex-basis: 30%;
 }
 .form-input:focus ~ .form-label,.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label{
-    top:-0.4rem;
-    left:0.5rem;
+    top:-1.2rem;
+    left:0rem;
+    color: black;
+}
+.submit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .submit-button{
+        padding: 2% 6%;
+        font-size: 1.2rem;
+        background-color:#060b23;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
 }
 .card{
     position: absolute;

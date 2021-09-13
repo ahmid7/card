@@ -22,7 +22,14 @@ function Values(input,output,num){
 }
 
 expiryYear.addEventListener('keyup',function(){
-    Values(expiryYear,userExpiryYear,3);
+    // Values(expiryYear,userExpiryYear,3);
+    if(expiryYear.value.length < 3){
+        userExpiryYear.innerText = expiryYear.value;
+    }else{
+        let answer = expiryYear.value.substr(0,3);
+        expiryYear.value = answer; 
+        return;
+    }
 });
 
 
@@ -48,11 +55,11 @@ cvvInput.addEventListener('keyup',function(){
 cvvInput.addEventListener('focus',function(){
     frontCard.style.animation = "front 0.4s linear forwards";
     backCard.style.animation = 'back 0.4s linear 0.4s forwards';
-})
+});
 cvvInput.addEventListener('blur',function(){
     backCard.style.animation = 'reverseBack 0.4s linear forwards';
     frontCard.style.visibility = 'hidden';
     frontCard.style.animation = 'reverseFront 0.4s linear 0.4s forwards'
-})
+});
 
 
