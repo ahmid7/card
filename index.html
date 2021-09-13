@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <section class="form-container">
+        <form action="" method="POST">
+            <div>
+                <input type="text" class="form-input cardno" id="cardNo" placeholder=" " autocomplete="off">
+                <label for="cardNo" class="form-label">Card number</label>
+            </div>
+            <div>
+                <input type="text" class="form-input card-name" id="cardHolder" placeholder=" " autocomplete="off">
+                <label for="cardHolder cardName" class="form-label">card holder</label>
+            </div>
+            <div class="expiry">
+                <div>
+                    <input type="number" class="form-input expiry-month" id="expiryMonth" placeholder=" " autocomplete="off" min="01" max="12">
+                    <label for="expiryMonth" class="form-label">MM</label>
+                </div>
+                <div>
+                    <input type="number" class="form-input expiry-year" id="expiryYear" placeholder=" " autocomplete="off">
+                    <label for="expiryYear" class="form-label">YY</label>
+                </div>
+                <div class="cvv-container">
+                    <input type="number" class="form-input cvv" id="cvv" placeholder=" " autocomplete="off" min="000" max="999">
+                    <label for="cvv" class="form-label cvvlabel">CVV</label>
+                </div>
+            </div>
+            <section class="card">
+                <div class="front fb">
+                    <div class="front-images">
+                        <img src="images/chip.png" alt="">
+                        <img class="second-img" src="images/visa.png" alt="">
+                    </div>
+                    <p class="frontCardNO"></p>
+                    <div class="card-details">
+                        <div class="card-holder">
+                            <h4>Card Holder</h4>
+                            <p class="user-card-name"></p>
+                        </div>
+                        <div class="card-expiry">
+                            <h4>Express</h4>
+                            <div>
+                                <p class="user-expiry-month"></p>
+                                <p class="user-expiry-year"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back fb">
+                    <p></p>
+                    <div class="back-details">
+                        <h5>Cvv</h5>
+                        <p class="user-cvv"></p>
+                        <div class="back-image">
+                            <img src="images/visa.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </form>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
