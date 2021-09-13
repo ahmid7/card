@@ -39,6 +39,10 @@ form {
   -webkit-backdrop-filter: blur(6.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 form div {
@@ -480,11 +484,11 @@ form div {
 @media screen and (max-width: 769px) {
   form {
     width: 85%;
-    padding-top: 15%;
+    padding-top: 19%;
   }
   .card {
     width: 85%;
-    top: -40%;
+    top: -38%;
     left: 7.5%;
   }
 }
